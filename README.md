@@ -1,22 +1,28 @@
 # Instant Replay Guard
 
+[![Release](https://img.shields.io/github/v/release/Hounderd/InstantReplayGuard?display_name=tag&style=for-the-badge)](https://github.com/Hounderd/InstantReplayGuard/releases)
+[![Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-0A84FF?style=for-the-badge)](https://guard.nodd.dev)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan-2F6FED?style=for-the-badge)](https://www.virustotal.com/gui/file/ad4943c6d4985f909ce71869ee25443f4ae78c5c6a19a290698c50f5b773f859)
+
 Public releases and issue tracking for **Instant Replay Guard**.
 
 Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant Replay from silently turning itself off, so you stop losing clips after restarts, overlay resets, or NVIDIA hiccups.
 
-## Latest build
+## Quick Links
 
-- Website: https://guard.nodd.dev
-- Direct download: https://download.nodd.dev/InstantReplayGuard-1.1.0-win-x64.zip
-- VirusTotal: https://www.virustotal.com/gui/file/a67ac1d6c3b7ae26c935fb8457baf1096a6258027a3a531bb2b4ded44da88aaa?nocache=1
+- 🌐 Website: https://guard.nodd.dev
+- 📦 GitHub Releases: https://github.com/Hounderd/InstantReplayGuard/releases
+- 🛡️ VirusTotal scan: https://www.virustotal.com/gui/file/ad4943c6d4985f909ce71869ee25443f4ae78c5c6a19a290698c50f5b773f859
+- ☕ Tip jar: https://ko-fi.com/hounderd
 
-## What it does
+## What Instant Replay Guard does
 
-- monitors Instant Replay in the background
-- re-enables it if NVIDIA drops it
-- runs locally on your machine
-- stays out of the game process entirely
+- keeps Instant Replay alive in the background
+- re-enables it if NVIDIA silently drops it
+- runs locally on your machine with no account or cloud sync
+- stays outside the game process entirely
 - sits in the tray and uses negligible CPU when idle
+- supports process-aware keepalive modes for app-specific behavior
 
 ## Safety
 
