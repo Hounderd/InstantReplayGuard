@@ -10,10 +10,10 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 
 ## Quick Links
 
-- 🌐 Website: https://guard.nodd.dev
-- 📦 GitHub Releases: https://github.com/Hounderd/InstantReplayGuard/releases
-- 🛡️ VirusTotal scan: https://www.virustotal.com/gui/file/ad4943c6d4985f909ce71869ee25443f4ae78c5c6a19a290698c50f5b773f859
-- ☕ Tip jar: https://ko-fi.com/hounderd
+- Website: https://guard.nodd.dev
+- GitHub Releases: https://github.com/Hounderd/InstantReplayGuard/releases
+- VirusTotal scan: https://www.virustotal.com/gui/file/ad4943c6d4985f909ce71869ee25443f4ae78c5c6a19a290698c50f5b773f859
+- Tip jar: https://ko-fi.com/hounderd
 
 ## What Instant Replay Guard does
 
@@ -23,6 +23,7 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 - stays outside the game process entirely
 - sits in the tray and uses negligible CPU when idle
 - supports process-aware keepalive modes for app-specific behavior
+- includes pause and exclusive app rules for whitelist-style control
 
 ## Safety
 
