@@ -1,0 +1,7 @@
+# Keep the repo metadata/docs clean.
+*.zip
+*.exe
+*.pdb
+*.log
+Thumbs.db
+.DS_Store
