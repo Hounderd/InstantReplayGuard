@@ -32,6 +32,7 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 - sits in the tray and uses negligible CPU when idle
 - supports process-aware keepalive modes for app-specific behavior
 - includes pause and exclusive app rules for whitelist-style control
+- can perform one startup IR reset when NVIDIA's mic state still looks uninitialized after boot
 
 ## Hotkey requirement
 
@@ -39,7 +40,56 @@ Instant Replay Guard uses NVIDIA's currently configured Instant Replay toggle sh
 
 - it does not require the default NVIDIA keybind
 - the `DVRToggle` hotkey does need to exist in NVIDIA settings
-- if that shortcut is unbound or invalid, Guard cannot toggle Instant Replay
+- the `DVRSave` hotkey does need to exist if you want replay saving to work
+- the `RecordToggle` hotkey does need to exist if you want recording control to work
+- if those shortcuts are unbound or invalid, Guard cannot perform the related action
+
+## Process Rules
+
+Some apps prevent Instant Replay from being active, which conflicts with a tool that is trying to keep it on. Instant Replay Guard includes process rules so you can control when protection should pause or only run for specific apps.
+
+Open the app and expand **Process Rules**. Add one executable name per line.
+
+Examples:
+
+- `obs64.exe`
+- `chrome.exe`
+- `netflix.exe`
+- `eldenring.exe`
+
+Instant Replay Guard currently matches against the running process executable name, not the full command line.
+
+Available modes:
+
+- **Always Keep On**  
+  Guard keeps Instant Replay on at all times.
+
+- **Pause While Listed Apps Run**  
+  If any listed app is running, Guard pauses itself and will not re-enable Instant Replay.
+
+- **Only Keep On For Listed Apps**  
+  Guard only keeps Instant Replay on while at least one listed app is running. If none of the listed apps are active, Guard will let Instant Replay stay off.
+
+Typical use cases:
+
+- Add `netflix.exe` or browser processes if DRM/video apps conflict with Instant Replay.
+- Add specific games if you only want Guard active while those games are running.
+- Add capture/streaming tools if you want Guard to avoid fighting with them.
+
+## Startup Mic Recovery
+
+Some systems need a manual Instant Replay off/on after reboot before NVIDIA finishes initializing microphone-related state correctly.
+
+Instant Replay Guard now includes an optional **Startup Mic Recovery** setting under **Monitoring**.
+
+When enabled:
+
+- Guard waits for startup
+- checks NVIDIA's current Instant Replay + microphone state
+- if Instant Replay is on but mic state still looks uninitialized, it performs one controlled IR off/on reset
+- logs the result in **Recent Activity**
+
+This is a recovery feature, not full microphone control. Guard can currently detect NVIDIA microphone state, but it does not directly set the NVIDIA mic device or mic mode yet.
 
 ## Safety
 
