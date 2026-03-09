@@ -27,12 +27,14 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 
 - keeps Instant Replay alive in the background
 - re-enables it if NVIDIA silently drops it
+- includes built-in capture controls for replay saving and manual recording
 - runs locally on your machine with no account or cloud sync
 - stays outside the game process entirely
 - sits in the tray and uses negligible CPU when idle
 - supports process-aware keepalive modes for app-specific behavior
 - includes pause and exclusive app rules for whitelist-style control
 - can perform one startup IR reset when NVIDIA's mic state still looks uninitialized after boot
+- can detect when NVIDIA capture is blocked by low disk space or a full capture drive
 
 ## Hotkey requirement
 
@@ -90,6 +92,33 @@ When enabled:
 - logs the result in **Recent Activity**
 
 This is a recovery feature, not full microphone control. Guard can currently detect NVIDIA microphone state, but it does not directly set the NVIDIA mic device or mic mode yet.
+
+## Capture Controls
+
+Instant Replay Guard includes built-in actions for:
+
+- **Save Replay**
+- **Start Recording**
+- **Stop Recording**
+
+These are available from both the tray menu and the desktop app UI.
+
+They use NVIDIA's currently configured capture shortcuts, so the related bindings must exist in NVIDIA settings:
+
+- `DVRSave`
+- `RecordToggle`
+- `DVRToggle`
+
+## Storage Diagnosis
+
+If NVIDIA turns Instant Replay off because the capture drive is full or storage looks unavailable, Instant Replay Guard now tries to detect that instead of blindly re-enabling Instant Replay over and over.
+
+When Guard sees a likely storage blocker:
+
+- it records the reason in **Recent Activity**
+- it avoids pointless recovery attempts while storage is still the problem
+
+This helps distinguish normal NVIDIA hiccups from cases where the capture drive actually needs attention.
 
 ## Safety
 
