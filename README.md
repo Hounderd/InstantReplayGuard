@@ -10,6 +10,12 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 
 ![Instant Replay Guard screenshot](https://download.nodd.dev/instant-replay-guard-screenshot.png)
 
+<p>
+  <a href="https://ko-fi.com/hounderd" target="_blank" rel="noreferrer">
+    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" alt="Support Instant Replay Guard on Ko-fi" height="44" />
+  </a>
+</p>
+
 ## Quick Links
 
 - Website: https://guard.nodd.dev
