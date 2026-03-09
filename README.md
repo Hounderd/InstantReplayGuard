@@ -25,6 +25,14 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 - supports process-aware keepalive modes for app-specific behavior
 - includes pause and exclusive app rules for whitelist-style control
 
+## Hotkey requirement
+
+Instant Replay Guard uses NVIDIA's currently configured Instant Replay toggle shortcut.
+
+- it does not require the default NVIDIA keybind
+- the `DVRToggle` hotkey does need to exist in NVIDIA settings
+- if that shortcut is unbound or invalid, Guard cannot toggle Instant Replay
+
 ## Safety
 
 - no account
