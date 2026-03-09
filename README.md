@@ -8,6 +8,8 @@ Public releases and issue tracking for **Instant Replay Guard**.
 
 Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant Replay from silently turning itself off, so you stop losing clips after restarts, overlay resets, or NVIDIA hiccups.
 
+![Instant Replay Guard screenshot](https://download.nodd.dev/instant-replay-guard-screenshot.png)
+
 ## Quick Links
 
 - Website: https://guard.nodd.dev
