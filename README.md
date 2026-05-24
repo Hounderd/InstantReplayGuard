@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/Hounderd/InstantReplayGuard?display_name=tag&style=for-the-badge)](https://github.com/Hounderd/InstantReplayGuard/releases)
 [![Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-0A84FF?style=for-the-badge)](https://guard.nodd.dev)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan-2F6FED?style=for-the-badge)](https://www.virustotal.com/gui/file/b22343d53ba6738695da120afbe0dbb5fccf73b9d6d0f061dd6d047b41ee1802)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan-2F6FED?style=for-the-badge)](https://www.virustotal.com/gui/file/2700c74ab9253465c9a640dc591355e722c6540290dcd621153a87758ae1fcc2)
 
 Public releases and issue tracking for **Instant Replay Guard**.
 
@@ -20,7 +20,7 @@ Instant Replay Guard is a lightweight Windows tray app that keeps NVIDIA Instant
 
 - Website: https://guard.nodd.dev
 - GitHub Releases: https://github.com/Hounderd/InstantReplayGuard/releases
-- VirusTotal scan: https://www.virustotal.com/gui/file/b22343d53ba6738695da120afbe0dbb5fccf73b9d6d0f061dd6d047b41ee1802
+- VirusTotal scan: https://www.virustotal.com/gui/file/2700c74ab9253465c9a640dc591355e722c6540290dcd621153a87758ae1fcc2
 - Tip jar: https://ko-fi.com/hounderd
 
 ## What Instant Replay Guard does
